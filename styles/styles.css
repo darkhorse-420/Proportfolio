@@ -240,7 +240,7 @@ section {
   padding-bottom: 0;
 }
 .about-container .right-about .about-item {
-  border: 1px solid var(--color-grey-5);
+  border: 3px solid var(--color-grey-5);
   border-radius: 5px;
   transition: all 0.4s ease-in-out;
   box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
@@ -390,7 +390,7 @@ section {
 /*Timeline*/
 .timeline {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-gap: 2rem;
   padding-bottom: 3rem;
 }
@@ -479,6 +479,8 @@ section {
   font-size: 1.5rem;
   color: var(--color-white);
   margin-bottom: 1.5rem;
+  margin-left:1.5rem ;
+  margin-right: 1.5rem;
 }
 .portfolios .portfolio-item .hover-items .icons {
   display: flex;
