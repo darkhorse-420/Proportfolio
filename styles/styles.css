@@ -12,8 +12,6 @@
 
 :root {
   
-
-  
   background-color:black;
   background-image:
   radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
@@ -38,7 +36,7 @@
 
 
 .light-mode {
-  background:"https://w7.pngwing.com/pngs/488/883/png-transparent-telescope-observation-study-planetarium-observatory-astronomy-astronomer-scientist-science-children.png" ;
+  background-image: url(../img/day.png);
   --color-primary: #FFFFFF;
   --color-secondary: #F56692;
   --color-white: #454e56;
@@ -50,6 +48,8 @@
   --color-grey-4: #454e56;
   --color-grey-5: #f8f8f8;
   --color-grey-6: #12181b;
+
+  
 }
 
 body {
