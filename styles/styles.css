@@ -100,6 +100,7 @@ section {
   position:relative;
   display: flex;
   
+  
 
 }
 .bubbles span{
@@ -113,6 +114,7 @@ section {
   0 0 10px #f8f8f8,
   0 0 20px #f8f8f8,
   0 0 40px #f8f8f8;
+  opacity:0.5 ;
   animation: animate 15s linear infinite;
   animation-duration: calc(125s/var(--i));
 
