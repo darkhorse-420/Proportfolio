@@ -32,11 +32,12 @@
   --color-grey-6: #12181b;
   --br-sm-2: 14px;
   --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
+  --color-bubbles: rgb(255, 255, 255);
 }
 
 
 .light-mode {
-  background-image: url(../img/day.png);
+  
   --color-primary: #FFFFFF;
   --color-secondary: #F56692;
   --color-white: #454e56;
@@ -48,12 +49,15 @@
   --color-grey-4: #454e56;
   --color-grey-5: #f8f8f8;
   --color-grey-6: #12181b;
+  --color-bubbles: #e45f1c;
+ 
+  
 
   
 }
 
 body {
-  
+
   background-color: var(--color-primary);
   font-family: "Poppins", sans-serif;
   font-size: 1.1rem;
@@ -69,6 +73,7 @@ a {
 }
 
 header {
+
   min-height: 100vh;
   color: var(--color-white);
   overflow: hidden;
@@ -76,6 +81,7 @@ header {
 }
 
 section {
+  
   min-height: 100vh;
   width: 100%;
   position: absolute;
@@ -85,6 +91,7 @@ section {
 }
 
 .container {
+ 
   display: none;
   transform: translateY(-100%) scale(0);
   transition: all 0.4s ease-in-out;
@@ -92,20 +99,20 @@ section {
 }
 
 .bubbles{
-  z-index:-100;
+  
   position:relative;
   display: flex;
   
 
 }
 .bubbles span{
-  position: 30px;
+  position: 50px;
   width:5px;
   height: 5px;
-  background: rgb(255, 255, 255) ;
+  background: var(--color-bubbles) ;
   margin: 0 1px;
   border-radius: 50%;
-  box-shadow: 0 0 0 1px #6c7983,
+   box-shadow: 0 0 0 1px #6c7983,
   0 0 10px #f8f8f8,
   0 0 20px #f8f8f8,
   0 0 40px #f8f8f8;
@@ -115,7 +122,7 @@ section {
 
 }
 .bubbles span:nth-child(even){
-  background: rgb(254, 253, 252) ;
+  background: rgb(255, 255, 255) ;
   box-shadow: 0 0 0 1px rgba(151, 146, 146, 0.781),
   0 0 10px rgb(244, 242, 241),
   0 0 50px rgb(255, 255, 255);
@@ -211,6 +218,7 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   min-height: 100vh;
+  
 }
 .header-content .left-header {
   display: flex;
